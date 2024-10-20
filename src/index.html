@@ -1,0 +1,62 @@
+<!doctype html>
+<html class="" dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="output.css" rel="stylesheet">
+    <title>ورود | ثبت‌نام</title>
+</head>
+
+<body class="w-screen h-screen bg-white_C flex justify-center items-center dark:bg-dark_bg_body font-vazir_l flex-col">
+
+<div class="w-full bg-white_C flex justify-center items-center p-4 rounded-lg flex-col dark:lg:bg-dark_bg_card dark:bg-transparent lg:border lg:border-gray_C lg:w-[35%]">
+
+    <img alt="logo" class="mb-3 shrink-0 mt-4" height="70" src="./assets/images/digiKala.png" width="100">
+
+    <div class="mt-4 w-full">
+
+        <h3 class="font-vazir_b text-lg dark:text-white">ورود | ثبت‌نام</h3>
+
+        <div class="my-4">
+            <p class="text-sm leading-7 dark:text-white">سلام!</p>
+            <p class="text-sm leading-7 dark:text-white">لطفا شماره موبایل یا ایمیل خود را وارد کنید</p>
+        </div>
+
+    </div>
+
+    <form action="#" class="w-full">
+        <label>
+            <input class="outline-0 lg:border lg:border-blue_C w-full rounded-lg py-2.5 px-2 text-muted bg-input_bg border-b-2 border-b-blue_C focus:border-0 "
+                   type="text">
+        </label>
+        <button class="w-full flex justify-center items-center text-white bg-red_C rounded-lg py-2.5 mt-6"
+                type="submit">
+            ورود
+        </button>
+    </form>
+
+    <p class="w-full  text-sx  my-5 text-muted dark:text-white_C ">
+        ورود شما به معنای پذیرش
+        <a class="text-blue_C px-1" href="#">شرایط دیجی‌کالا</a>
+        و
+        <a class="text-blue_C px-1" href="#"> قوانین حریم‌خصوصی </a>
+        است
+    </p>
+
+</div>
+
+<button class="bg-red_C px-7 py-2 rounded-lg mt-6 text-white_C inline-flex  " id="darkTheme">تغییر تم</button>
+
+<script>
+
+    let darkTheme = document.querySelector("#darkTheme")
+    let htmls = document.querySelector("html")
+    darkTheme.addEventListener("click", () => {
+        htmls.classList.contains("dark") ? htmls.classList.remove("dark") : htmls.classList.add("dark")
+    })
+
+</script>
+
+</body>
+
+</html>
